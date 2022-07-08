@@ -1,0 +1,24 @@
+package entities;
+
+import java.util.List;
+
+import entities.enums.WorkerLevel;
+
+public class Worker {
+	private String name;
+	private WorkerLevel workerLevel;
+	private Double baseSalary;
+	
+	private Department department;
+	private List<HourContract> contracts = new ArrayList<>();
+	public Worker() {
+		super();
+	}
+	public Worker(String name, WorkerLevel workerLevel, Double baseSalary, Department department) {
+		this.name = name;
+		this.workerLevel = workerLevel;
+		this.baseSalary = baseSalary;
+		this.department = department;
+	}
+
+}

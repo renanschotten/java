@@ -1,0 +1,31 @@
+package app;
+
+import java.text.SimpleDateFormat;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		SimpleDateFormat sdf = new SimpleDateFormat("dd//MM/yyyy");
+		
+		System.out.print("Enter department`s name: ");
+		sc.nextLine();
+		String departmentsName = sc.nextLine();
+		System.out.println("Enter worker data:");
+		System.out.print("Name: ");
+		sc.nextLine();
+		String workersName = sc.nextLine();
+		System.out.print("Level: ");
+		sc.nextLine();
+		String workersLevel = sc.nextLine();
+		System.out.print("Base Salary: ");
+		double workersBaseSalary = sc.nextDouble();
+		
+		
+		sc.close();
+	}
+
+}

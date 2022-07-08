@@ -1,0 +1,27 @@
+package entities;
+
+public class BankAccount {
+	public BankAccount(String name, int accountNumber, double balance) {
+		this.name = name;
+		this.accountNumber = accountNumber;
+		this.balance = balance;
+	}
+
+	public BankAccount(String name, int accountNumber) {
+		this.name = name;
+		this.accountNumber = accountNumber;
+
+	}
+
+	private String name;
+	private int accountNumber;
+	private double balance;
+
+	public void deposit(double value) {
+		balance += value;
+	}
+
+	public void withdraw(double value) {
+		balance -= value - 5.0;
+	}
+}

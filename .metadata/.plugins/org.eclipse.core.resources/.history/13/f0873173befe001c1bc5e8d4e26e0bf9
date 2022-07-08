@@ -1,0 +1,7 @@
+package entities;
+
+public class HourContract {
+	private Date date;
+	private Double valuePerHour;
+	private Integer hours;
+}

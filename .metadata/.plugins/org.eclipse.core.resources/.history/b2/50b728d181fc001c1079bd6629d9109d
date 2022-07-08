@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		String texto = "Ola, mundo";
+		System.out.println(texto);
+		System.out.println("Bom dia");
+		double x = 10.75;
+		System.out.println(x);
+		System.out.printf("%.2f", x);
+	}
+
+}

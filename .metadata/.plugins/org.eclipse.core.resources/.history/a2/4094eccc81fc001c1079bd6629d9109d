@@ -1,0 +1,12 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		String texto = "Ola, mundo";
+		System.out.println(texto);
+		System.out.print("Bom dia");
+		double x = 10.75;
+		System.out.println(x);
+	}
+
+}

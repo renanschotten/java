@@ -1,0 +1,23 @@
+package app;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<>();
+		list.add("Maria");
+		list.add("Ana");
+		list.add("Carlos");
+		list.add("Jose");
+		list.add("Muriel");
+		list.add(2, "Andre");
+		
+		for(String str : list) {
+			System.out.println(str);
+		}
+
+	}
+
+}

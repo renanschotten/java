@@ -1,0 +1,17 @@
+package app;
+
+import utils.Calculator;
+
+public class Program {
+
+	public static void main(String[] args) {
+		double radius = 3.0;
+		
+		double circ = Calculator.circumference(radius);
+		double volume = Calculator.volume(radius);
+		
+		System.out.println(circ);
+		System.out.println(volume);
+	}
+
+}

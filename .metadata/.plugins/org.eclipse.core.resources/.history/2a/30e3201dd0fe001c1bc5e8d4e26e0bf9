@@ -1,0 +1,28 @@
+package app;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import entities.Client;
+import entities.Order;
+import entities.OrderItem;
+import entities.Product;
+import entities.enums.OrderStatus;
+
+public class Program {
+
+	public static void main(String[] args) throws ParseException {
+		SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy");
+		Client client = new Client("Alex Green", "alex@gmail.com",sdf1.parse("15/03/1985"));
+		Product p1 = new Product("TV", 1000.00);
+		Product p2 = new Product("Mouse", 20.00);
+		OrderItem oi1 = new OrderItem(1, p1);
+		OrderItem oi2 = new OrderItem(2, p);
+		Order order = new Order(new Date(), OrderStatus.valueOf("PROCESSING"),client);
+		order.addItem(oi1);
+		order.addItem(oi2);
+		
+	}
+
+}

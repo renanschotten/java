@@ -1,0 +1,21 @@
+package app;
+
+import java.util.Scanner;
+
+import utils.Calculator;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double radius = 3.0;
+		double circ = Calculator.circumference(radius);
+		double volume = Calculator.volume(radius);
+		
+		System.out.printf("%.2f%n",circ);
+		System.out.printf("%.2f%n",volume);
+		
+		sc.close();
+	}
+
+}

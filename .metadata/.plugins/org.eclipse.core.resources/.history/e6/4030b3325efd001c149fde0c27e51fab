@@ -1,0 +1,21 @@
+package entities;
+
+public class Student {
+	public double grade1;
+	public double grade2;
+	public double grade3;
+
+	public double finalGrade() {
+		return grade1 + grade2 + grade3;
+	}
+
+	public String status() {
+		double totalGrade = finalGrade();
+		return (totalGrade >= 60) ? "PASS" : "FAILED";
+	}
+
+	public double missingPoints() {
+		return 60 - finalGrade();
+	}
+
+}
